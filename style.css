@@ -94,8 +94,15 @@ h2 {
 
 .biography {
     font-size: 1.2rem;
+    letter-spacing: 3px;
     text-align: justify;
     padding-bottom: 10px;
+    word-break: break-word;
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+    -o-hyphens: auto;
+    hyphens: auto;
 }
 
 .header_name {
@@ -196,18 +203,14 @@ a.send_mail:hover {
 
 @media(min-width:700px) and (max-width: 1099px) {
     .cv-container {width:auto}
-    .name_legend {position: absolute; top: 220px; right: auto }
+    .left-column, .right-column {width: auto}
+    .name_legend {position: center; text-align: center; margin-top: 70px}
 }
 
 @media(min-width:0px) and (max-width:699px) {
     .cv-container {width: auto}
-    .name_legend {position: absolute; top: 215px;}
+    .name_legend {position: center; text-align: center; margin-top: 90px}
+    .header_name {height: auto}
+    .portait {max-width: 70%}
 }
-    
-
-/* @media screen and (aspect-ratio: 1/1 ) {
-    body {
-        width: auto;
-        
-    }
-} */
+  
