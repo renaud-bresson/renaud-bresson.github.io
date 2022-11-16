@@ -262,7 +262,7 @@ a:hover {
     }
     .informations { 
         padding-top: 50%;
-        transform: translateX(-40%);
+        transform: translateX(-25%);
         grid-template-areas:
             "1"
             "1"
@@ -270,7 +270,7 @@ a:hover {
             "1";
     }
     #tel_link {transform: translateY(-5%)}
-    .test {font-size: 0.6em; padding: 0 10px}
+    .test {font-size: 0.75em; padding: 0 10px}
     .section{font-size: 0.45em; margin-bottom: -15%;}
     .section2{font-size: 0.40em; margin-bottom: -15%;}
     .experience-list{font-size: 75%; margin-bottom: -10%;}
