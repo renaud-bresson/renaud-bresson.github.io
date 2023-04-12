@@ -6,116 +6,196 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Renaud Bresson - CV</title>
     <link rel="shortcut incon" type="ico" href="Logo RB 16-13.ico">
-    <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/3348970f7a.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Maven+Pro:wght@500&family=Oleo+Script&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Maven+Pro:wght@500&family=Oleo+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+
 </head>
 
 <body>
-    <div class="cv-container">
-        <div class="left-column">
-            <p class="lien_cv" >
-            <a class="lien_cv_text" href="./Renaud Bresson - CV.pdf">Visualiser en pdf</a>
-            <a class="lien_cv_text" href="./Renaud Bresson - CV.pdf" download>Télécharger en pdf</a>
-            </p>
-            <img class="portait" src="photo.jpg" alt="photo" />
-            <p class="code"><i class="fa-solid fa-code"></i></p>
-            
-            <div class="biography">
-                <p>Actuellement en reconversion professionnelle suite à la survenue d'un handicap, je reviens à mes amours de jeunesse dans l'informatique.</p>
-                <p>Mon profil investigateur et mon appétence pour les résolutions de problèmes m'ont amenés à me projeter en Développement Web.</p>
-                <p>Parrallèlement à une auto-formation j'ai pu réaliser un stage d'observation affirmant mes capacités et motivations à exercer ce métier à l'avenir.</p>
-                <p>Je souhaite désormais rejoindre une formation professionalisante afin de confirmer mes acquis et poursuivre l'apprentissage entamé en codage.</p>
-            </div>
+	<section id="cv-container" class="grid grid-cols-3 md:grid-cols-5">
 
-            <div class="languages">
-                <h2 class="explored_languages">Languages explorés</h2>
-                <br>
-                <ul class="skills">
-                    <li><i class="icon fas fa-check-circle text-darkblue"></i> <strong>HTML 5</strong></li>
-                    <li><i class="icon fas fa-check-circle text-darkblue"></i> <strong>CSS 3</strong></li>
-                    <li><i class="icon fas fa-check-circle text-darkblue"></i> <strong>PHP</strong></li>
-                    <li><i class="icon fas fa-check-circle text-darkblue"></i> <strong>JAVASCRIPT</strong></li>
-                    <li><i class="icon fas fa-check-circle text-darkblue"></i> <strong>PYTHON</strong></li>
-                    <li><i class="icon fas fa-check-circle text-darkblue"></i> <strong>SQL</strong></li>
-                    <li><i class="icon fas fa-check-circle text-darkblue"></i> <strong>Git | Github</strong></li>
-                </ul>
-            </div>
-            <br/>
-            <img class="QRcode" src="QRcode.png" alt="QRcode">
-            
-            
+		<section id="left collumn" class="col-span-1 flex flex-col items-center bg-custom-blue">
 
-        </div>
+			<p class="row text-center mb-4" >
+				<a class="downloadLink col-span-1 text-sm md:text-lg text-custom-darkblue" href="./Renaud Bresson - CV.pdf" download>Télécharger en pdf</a>
+			</p>
+			<img class="w-2/3 rounded-full" src="./images/photo.jpg" alt="photo" />
+			<p class="text-center text-custom-grey text-lg md:text-xl lg:text-2xl mt-8 md:mb-4"><i class="fa-solid fa-code"></i></p>
+			
+			<div id="biography" class="text-center text-custom-grey m-4 text-base md:text-xl lg:text-2xl">
+				<p>En reconversion professionnelle suite à la survenue d'un handicap, je suis actuellement en formation à la CCI de Roanne avec le Garage404 depuis novembre 2022. Mon projet professionnel s'oriente vers le développement web, plus particulièrement le back-end.</p>
+				<p>Mon profil investigateur et mon appétence pour les résolutions de problèmes m'ont amené à me projeter dans ce domaine. J'ai également réalisé un stage d'observation qui a confirmé mes capacités et motivations à exercer ce métier à l'avenir.</p>
+				<p>Je suis actuellement à la recherche d'un stage orienté back-end pour les mois de septembre et octobre 2023 afin de continuer à acquérir de l'expérience et de mettre en pratique mes connaissances.</p>
+			</div>
 
-        <div class="right-column">
+			<div class="flex justify-center mt-12">
+				<a class="w-2/3" href="https://renaud-bresson.github.io/"><img src="./images/QRcode.png" alt="QRcode" title="https://renaud-bresson.github.io/"></a>	
+			</div>
 
-            <div class="header_name">
-                <h1>Renaud <span class="text-blue text-uppercase text-weight_2 bresson">Bresson</span></h1>
-                <p class="name_legend">Noob Web Developer - Tuto scientist</p>
-                <ul class="informations" style="list-style-type: none">
-                    <li class="test"><a href="https://www.google.com/maps/place/1+Rue+des+Oeufs,+42510+N%C3%A9ronde/@45.8387233,4.233924,342m/data=!3m2!1e3!4b1!4m5!3m4!1s0x47f46a8e8ad9fff7:0xa4355f0f6ec44844!8m2!3d45.8387233!4d4.2361127!5m1!1e4" target="_blank" title="1 rue des Oeufs - 42510 Néronde"> <i class="fa-solid fa-location-dot"></i></a></li>
-                    <li class="test" id="tel_link" ><a id="tel_link2" href="tel:+33623846765" title="06.23.84.67.65"><span><strong>&#9990</strong></span></a></li>
-                    <li class="test" id="send_mail"><a id="send_mail2"href="mailto:renaud.bresson@gmail.com" title="renaud.bresson@gmail.com">&#64</a></li>
-                    <li class="test"><a href="https://www.linkedin.com/in/renaud-bresson" title="profil LinkedIn" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
-                </ul>
-            </div>
-            <div class="content">
-                <h2>Expériences <span class="text-blue text-weight_1"><br>Professionnelles</span></h2>
-                <div class="section">
-                    <h4>
-                        2014 <i class="fas fa-long-arrow-alt-right"></i> 2022
-                        <br>
-                        Caramel Analyst, NIGAY SAS - Feurs (42)
-                    </h4>
-                    <ul class="experience-list">
-                        <li>Analyses physiques, chimiques et biologiques de produits agroalimentaires</li>
-                        <li>Debuggings de lots non-conformes par l'utilisation de CDC, de databases et d'un sens logique pour aboutir à un recettage parfait coté client</li>
-                        <li>Délégué du personnel : Compilations de codes sources d'insatisfactions et intégrations au back-office de l'entreprise</li>
-                    </ul>
-                    <br>
-                    <br>
-                    <h4>
-                        2003 <i class="fas fa-long-arrow-alt-right"></i> 2013
-                        <br>
-                        Human Samples Analyst, Unibio - Nîmes (30) / Unilians - Feurs (42)
-                    </h4>
-                    <ul class="experience-list">
-                    <li>Analyses physiques, chimiques et biologiques d'échantillons médicaux</li>
-                    <li>Samplings sur patient.e.s / Reportings aux médecins et cliniques</li>
-                    <li>Référent Qualité : Développements, tests, mises en productions et maintenances des backlogs nécéssaires à l'accréditation du laboratoire</li>
-                    </ul>
-                </div>
-                <br>
-                <h2>Lan<span class="text-blue text-weight_1">gues</span></h2>
-                <div class="section2">
-                    Français, langue maternelle
-                    <br>
-                    Anglais, compétences professionnelles
-                    <br>
-                    Occitan, lu écrit parlé
-                </div>
-                <br>
-                <h2>Centres<br> <span class="text-blue text-weight_1">d'intérêt</span></h2>
-                <div class="section2">
-                    Jardinage, sciences de la nature et de l'écologie
-                    <br>
-                    Bricolage, sciences de la bidouille et de l'adaptation
-                    <br>
-                    Musique
-                    <br>
-                    Informatique en général
-                    <br>
-                    Sciences en général
-                    <br>
-                    Wordgamings et trollages
-                </div>
-            </div>
-        </div>
-    </div>
+		</section>
+
+		<section id="right-column" class="col-span-2 md:col-span-4 overflow-hidden">
+
+			<div id="header_name" class="bg-custom-grey md:grid md:grid-cols-8 gap-4 pt-2 pb-4">
+				<div class="col-span-6">
+					<h1 class="text-6xl md:text-9xl text-center">Renaud <span class="text-custom-blue">Bresson</span></h1>
+					<p class="text-xl md:text-3xl text-center text-custom-darkgrey">Developpeur Web en formation</p>
+					<p class="text-2xl md:text-3xl text-center text-custom-darkblue pt-2">En recherche de stage pour septembre et octobre 2023</p>
+				</div>
+
+				<div class="md:col-span-2 mt-4 md:mt-0">
+					<div class="flex md:grid md:grid-cols-2 justify-center items-center h-full text-center text-5xl md:text-7xl">
+
+						<div id="adress-link" class="mb-2 mx-2">
+							<a class="header-name-bigLink" href="https://www.google.com/maps/place/1+Rue+des+Oeufs,+42510+N%C3%A9ronde/@45.8387233,4.233924,342m/data=!3m2!1e3!4b1!4m5!3m4!1s0x47f46a8e8ad9fff7:0xa4355f0f6ec44844!8m2!3d45.8387233!4d4.2361127!5m1!1e4" target="_blank" title="1 rue des Oeufs - 42510 Néronde"> <i class="fa-solid fa-location-dot"></i></a>
+						</div>
+
+						<div id="tel-link" class="mx-2" >
+							<a class="header-name-link tel_link text-6xl md:text-8xl" href="tel:+33623846765" title="06.23.84.67.65"><span><strong>&#9990</strong></span></a>
+						</div>
+
+						<div id="mail-link" class="mx-2">
+							<a class="header-name-link send_mail text-6xl md:text-8xl" href="mailto:renaud.bresson@gmail.com" title="renaud.bresson@gmail.com">&#64</a>
+						</div>
+
+						<div id="linkedin-link" class="mx-2">
+							<a class="header-name-bigLink" href="https://www.linkedin.com/in/renaud-bresson" title="profil LinkedIn" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+						</div>
+
+					</div>
+				</div>
+
+			</div>
+
+			<div id="content" class="p-4">
+
+				<div id="programming-langages" class="mt-8 mb-20 mx-0 md:mx-2">
+					<h2 class="text-4xl md:text-5xl mb-2">Technologies <span class="text-custom-blue"><br>Explorées</span></h2>
+
+					<div class="grid grid-cols-5 lg:grid-cols-8 gap-4 justify-center items-center mt-6">
+						<div class="col-span-1">
+							<img class="md:w-1/2 w-3/2" src="./images/languages ico/PHP.png" alt="PHP" title="PHP">
+						</div>
+						<div class="col-span-1">
+							<img class="md:w-1/2 w-3/2" src="./images/languages ico/Symfony.png" alt="Symfony" title="Symfony">
+						</div>
+						<div class="col-span-1">
+							<img class="md:w-1/2 w-3/2" src="./images/languages ico/JavaScript.png" alt="JavaScript" title="JavaScript">
+						</div>
+						<div class="col-span-1">
+							<img class="md:w-1/2 w-3/2" src="./images/languages ico/Angular.png" alt="Angular" title="Angular">
+						</div>
+						<div class="col-span-1">
+							<img class="md:w-1/2 w-3/2" src="./images/languages ico/SQL.png" alt="SQL" title="SQL">
+						</div>
+						<div class="col-span-1">
+							<img class="md:w-1/2 w-3/2" src="./images/languages ico/Python.png" alt="Python" title="Python">
+						</div>
+						<div class="col-span-1">
+							<img class="md:w-1/2 w-3/2" src="./images/languages ico/Linux.png" alt="Linux" title="Linux">
+						</div>
+						<div class="col-span-1">
+							<img class="md:w-1/2 w-3/2" src="./images/languages ico/GitHub.png" alt="GitHub" title="GitHub">
+						</div>
+						<div class="col-span-1">
+							<img class="md:w-1/2 w-3/2" src="./images/languages ico/WordPress.png" alt="WordPress" title="WordPress">
+						</div>
+						<div class="col-span-1">
+							<img class="md:w-1/2 w-3/2" src="./images/languages ico/PrestaShop.png" alt="PrestaShop" title="PrestaShop">
+						</div>
+						<div class="col-span-1">
+							<img class="md:w-1/2 w-3/2" src="./images/languages ico/HTML5.png" alt="HTML5" title="HTML5">
+						</div>
+						<div class="col-span-1">
+							<img class="md:w-1/2 w-3/2" src="./images/languages ico/CSS3.png" alt="CSS" title="CSS">
+						</div>
+						<div class="col-span-1">
+							<img class="md:w-1/2 w-3/2" src="./images/languages ico/Sass.png" alt="Sass" title="Sass">
+						</div>
+						<div class="col-span-1">
+							<img class="md:w-1/2 w-3/2" src="./images/languages ico/Bootstrap.png" alt="Bootstrap" title="Bootstrap">
+						</div>
+						<div class="col-span-1">
+							<img class="md:w-1/2 w-3/2" src="./images/languages ico/Tailwind CSS.png" alt="Tailwind CSS" title="Tailwind CSS">
+						</div>
+					</div>
+
+				</div>
+
+				<div id="experiences" class="my-16 mx-0 md:mx-2">
+					<h2 class="text-4xl md:text-5xl mb-2">Expériences <span class="text-custom-blue"><br>Professionnelles</span></h2>
+
+					<div class="my-4 md:my-8">
+						<h4 class="text-xl md:text-2xl lg:text-3xl">
+								<span class="font-semibold">
+									2014 <i class="fas fa-long-arrow-alt-right"></i> 2022
+								</span>
+								<p>Caramel Analyst, NIGAY SAS - Feurs (42)</p>
+						</h4>
+						<ul class="px-4 text-lg md:text-xl lg:text-2xl" style="list-style-type: circle">
+								<li>Analyses physiques, chimiques et biologiques de produits agroalimentaires</li>
+								<li>Debuggings de lots non-conformes par l'utilisation de CDC, de databases et d'un sens logique pour aboutir à un recettage parfait coté client</li>
+								<li>Délégué du personnel : Compilations de codes sources d'insatisfactions et intégrations au back-office de l'entreprise</li>
+						</ul>
+					</div>
+
+					<div class="my-4 md:my-8">
+						<h4 class="text-xl md:text-2xl lg:text-3xl">
+							<span class="font-semibold">
+								2003 <i class="fas fa-long-arrow-alt-right"></i> 2013
+							</span>
+							<p>Human Samples Analyst, Unibio - Nîmes (30) / Unilians - Feurs (42)</p>
+						</h4>
+						<ul class="px-4 text-lg md:text-xl lg:text-2xl" style="list-style-type: circle">
+						<li>Analyses physiques, chimiques et biologiques d'échantillons médicaux</li>
+						<li>Samplings sur patient.e.s / Reportings aux médecins et cliniques</li>
+						<li>Référent Qualité : Développements, tests, mises en productions et maintenances des backlogs nécéssaires à l'accréditation du laboratoire</li>
+						</ul>
+					</div>
+
+				</div>
+
+				<div id="langages" class="my-16 mx-0 md:mx-2">
+					<h2 class="text-4xl md:text-5xl mb-2">Lan<span class="text-custom-blue">gues</span></h2>
+
+					<div class=" text-lg md:text-xl lg:text-2xl">
+							Français, langue maternelle
+							<br>
+							Anglais, compétences professionnelles
+							<br>
+							Occitan, lu écrit parlé
+					</div>
+				</div>
+
+				<div id="hobbies" class="my-16 mx-0 md:mx-2">
+					<h2 class="text-4xl md:text-5xl mb-2">Centres<br> <span class="text-custom-blue">d'intérêt</span></h2>
+					<div class=" text-lg md:text-xl lg:text-2xl">
+							Jardinage, sciences de la nature et de l'écologie
+							<br>
+							Bricolage, sciences de la bidouille et de l'adaptation
+							<br>
+							Musique
+							<br>
+							Informatique en général
+							<br>
+							Sciences en général
+							<br>
+							Wordgamings et trollages
+					</div>
+				</div>
+
+			</div>
+
+		</section>
+
+	</section>
+
+	<script src="./main.js"></script>
 </body>
 </html>
