@@ -1,0 +1,279 @@
+@font-face {
+    font-family: "SimplyRounded";
+    src: url(./SimplyRounded.ttf);
+}
+
+* {
+    font-family: "SimplyRounded", sans-serif;
+    letter-spacing: 0px;
+    font-weight: 100;
+    font-size: 1.2em;
+}
+
+br {
+    line-height: 10%;
+    }
+
+.text-blue{
+    color: #4472C4;
+}
+
+.text-darkblue{
+    color: #002060;
+}
+
+.text-uppercase{
+    text-transform: uppercase;
+}
+
+.text-weight_1 {
+    font-size: 1em;
+}
+
+.text-weight_2 {
+    font-size: 1.1em;
+}
+
+h1 {
+    font-size: 1.8em;
+    padding: 2% 0;
+}
+
+h2{
+    text-transform: uppercase;
+    font-size: 0.9em;
+    padding: none;
+    margin-bottom: 2%;
+}
+
+.explored_languages{
+    font-size: 1.1em;
+}
+
+h4{
+    margin: -1% 0 1% 0;
+    font-size: 0.9em;
+}
+
+
+.cv-container{
+    display: grid;
+    grid-template-columns: 33% 67%;
+    grid-template-areas: "left-column right-column";
+    width: auto;
+    margin: none;
+}
+
+.left-column{
+    grid-area: left-column;
+    padding: 0 10%;
+    background-color: #4472C4;
+    color: rgb(214, 214, 214);
+}
+
+.lien_cv {
+    display: grid;
+    padding: 05px;
+    margin: 0;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+    align-items: center;
+}
+
+.lien_cv_text {
+    font-size: 0.8rem;
+    text-decoration: underline;
+}
+
+.lien_cv_text:hover {
+    font-size: 1.1rem;
+    color: black;
+    text-decoration: none;
+}
+
+.portait{
+    border-radius: 50%;
+    max-width: 3em;
+    margin: auto;
+    display: block;
+    margin-bottom: none;
+}
+
+.code {
+    text-align: center;
+    font-size: 0.6em;
+    margin: 0.5em 0 0.5em 0;
+}
+
+.biography {
+    font-size: 0.6em;
+    text-align: justify;
+    padding-bottom: 10px;
+    word-break: break-word;
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+    -o-hyphens: auto;
+    hyphens: auto;
+}
+
+.icon{
+    margin-right: .5em;
+}
+
+.languages{
+    font-size: 1em;
+}
+
+.skills{
+    list-style-type: none;
+    padding: 0;
+    font-size: 0.7em;
+    letter-spacing: 1px;
+    margin: -1em 0 0.5em 0;
+}
+
+.QRcode {
+    width: 5em;
+    transform: translateX(35%);
+}
+
+
+.right-column{
+    grid-area: right-column;
+    display: grid;
+    grid-template-rows: 200px 1fr;
+    grid-template-areas:
+        "header_name"
+        "content";
+}
+
+.header_name {
+    grid-area: header_name;
+    height: 150px;
+    padding: 20px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color:#9fadc5;
+    grid-template-columns: 5fr 1fr;
+    grid-template-rows: 100px 20px;
+    grid-template-areas:
+        "h1"
+        "name_legend";
+}
+
+.name_legend {
+    grid-area: name_legend;
+    font-size: 0.7em;
+    color: rgb(83, 83, 83);
+    text-align: center;
+}
+
+.informations { 
+    padding-top: 35%;
+    display: grid;
+    grid-template-areas:
+        "1 1"
+        "1 1";
+}
+
+.test {
+   font-size: 0.7em;
+   padding: 0 10px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: #4472C4;
+}
+
+#tel_link {
+    transform: translateY(-22%);
+}
+
+#send_mail {
+    font-size: 1.1em;
+    transform: translateY(-12%);
+}
+
+#tel_link2:hover {
+    cursor: alias;
+}
+
+#send_mail2:hover {
+    cursor: text;
+}
+
+.content{
+    grid-area: content;
+    padding: 1.2% 0 5% 8%;
+    color: rgb(43, 43, 43);
+    line-height: normal;
+}
+
+.section{
+    font-size: 0.7em;
+    margin-bottom: -2%;
+}
+
+.section2{
+    font-size: 0.65em;
+    margin-bottom: -2%;
+}
+
+.experience-list{
+    list-style-type: circle;
+    font-size: 75%;
+    margin: 1% 0 -2% 0;
+    padding-right: 20%;
+}
+
+
+
+@media(min-width:800px) and (max-width: 1250px) {
+    .header_name {
+        padding: 40px;
+        grid-template-rows: 100px 120px;
+        
+    }
+}
+
+@media(min-width:0px) and (max-width: 800px) {
+    h2{font-size: 0.55em;}
+    .explored_languages{font-size: 1.15em;}
+    .cv-container{grid-template-columns: 40% 60%; width: fit-content;}
+    .left-column{height:102%}
+    .lien_cv_text {font-size: 0.55rem}
+    .lien_cv_text:hover {font-size: 0.7rem}
+    .portait{max-width: 2.5em}
+    .biography {font-size: 0.4em}
+    .languages{font-size: 0.6em}
+    .QRcode {width: 3.8em; transform: translateX(0%)}
+    .header_name {
+        padding: 20px 0 20px 10px;
+        grid-template-rows: 100px 70px;
+        font-size: 80%;        
+    }
+    .informations { 
+        padding-top: 50%;
+        transform: translateX(-25%);
+        grid-template-areas:
+            "1"
+            "1"
+            "1"
+            "1";
+    }
+    #tel_link {transform: translateY(-5%)}
+    .test {font-size: 0.75em; padding: 0 10px}
+    .section{font-size: 0.45em; margin-bottom: -15%;}
+    .section2{font-size: 0.40em; margin-bottom: -15%;}
+    .experience-list{font-size: 75%; margin-bottom: -10%;}
+
+}
+     
